@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectKlientApplication.AdminView.StudentsList"
+             Title="Список студентов">
+    <ListView x:Name="SList"
+                      HasUnevenRows="True"
+                      ItemsSource="{Binding StudList}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <StackLayout Padding="40,0,40,0">
+                            <Label Text="{Binding Login}" FontSize="Large" />
+                            <Label Text="{Binding Pass}" />
+                            <Label Text="{Binding FirstName}" />
+                            <Label Text="{Binding SecondName}" />
+                            <Label Text="{Binding LastName}" />
+                            <Label Text="{Binding Email}" />
+                            <Label Text="{Binding Telephone}" />
+                            <Label Text="{Binding DateBorn}" />
+                            <Label Text="{Binding Sex}" />
+                            <Label Text="{Binding Group}" />
+                        </StackLayout>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

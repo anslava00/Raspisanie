@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectKlientApplication.View.StudentPage"
+             >
+    <ContentPage.Content>
+        <StackLayout Background="White" Padding="40,0,40,0">
+            <Label Text = "Логин" FontSize="Large"  />
+                    <Label x:Name = "LabelLogin"></Label>
+            <Label Text = "Имя" FontSize="Large" />
+                    <Label x:Name = "LabelFirstName"></Label>
+            <Label Text = "Фамилия" FontSize = "Large" />
+                    <Label x:Name = "LabelSecondName"></Label>
+            <Label Text = "Отчество" FontSize = "Large" />
+                    <Label x:Name = "LabelLastName"></Label>
+            <Label Text = "Почта" FontSize="Large" />
+                    <Label x:Name = "LabelEmail"></Label>
+            <Label Text = "Телефон" FontSize = "Large" />
+                    <Label x:Name = "LabelTelephone"></Label>
+            <Label Text = "Дата Рождения" FontSize = "Large" />
+                    <Label x:Name = "LabelBorn"></Label>
+            <Label Text = "Пол" FontSize = "Large" />
+                    <Label x:Name = "LabelSex"></Label>
+            <Label Text = "Группа" FontSize = "Large" />
+                    <Label x:Name = "LabelGroup"></Label>
+
+            <Button Text="Рассписание" Clicked="Graphik"></Button>
+            <Button Text="Exit" Clicked="ExitButtonClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectKlientApplication.View.Graphik">
+    <ContentPage.Content>
+        <StackLayout Padding="40,0,40,0">
+            <Label x:Name = "Label1" Text="2222222" FontSize="50" />
+            <DatePicker x:Name = "DatePicke" DateSelected="ChooseDate">
+                <DatePicker.MinimumDate>5/01/2020</DatePicker.MinimumDate>
+                <DatePicker.MaximumDate>11/21/2020</DatePicker.MaximumDate>
+            </DatePicker>
+            
+            <ListView x:Name="GraphikList"
+                      HasUnevenRows="True"
+                      ItemsSource="{Binding Graphiks}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout>
+                                    <Label Text="{Binding Time}" FontSize="Large" />
+                                    <Label Text="{Binding NameSubject}" />
+                                    <Label Text="{Binding Teacher}" />
+                                    <Label Text="{Binding ClassRoom}" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

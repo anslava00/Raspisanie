@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjectKlientApplication.RegistrationPage"
+             Title="Регистрация">
+    <ContentPage.Content>
+        <StackLayout Background="White" Padding="40,0,40,0">
+            <Label Text = "Login" FontSize="Large" />
+                <Entry x:Name = "LoginEntry"></Entry>
+            <Label Text = "Password" FontSize = "Large" />
+                <Entry x:Name = "PasswordEntry" Placeholder = "Password" IsPassword ="True"></Entry>
+            
+            <Label Text = "Имя" FontSize = "Large" />
+                <Entry x:Name = "firstname"></Entry>
+            <Label Text = "Фамилия" FontSize = "Large" />
+                <Entry x:Name = "lastname"></Entry>
+            <Label Text = "Отчество" FontSize = "Large" />
+                <Entry x:Name = "secondname"></Entry>
+            
+            <Label Text = "email" FontSize = "Large" />
+                <Entry x:Name = "email"></Entry>
+            <Label Text = "Телефон" FontSize = "Large" />
+                <Entry x:Name = "telephone"></Entry>
+            <Label Text = "Дата рождения" FontSize = "Large" />
+                <DatePicker x:Name = "DateBorn">
+                    <DatePicker.MinimumDate>01/01/1980</DatePicker.MinimumDate>
+                    <DatePicker.MaximumDate>01/01/2021</DatePicker.MaximumDate>
+                </DatePicker>
+            <Label Text = "Пол" FontSize = "Large" />
+                <Picker x:Name="Sex">
+                    <Picker.Items>
+                        <x:String>М</x:String>
+                        <x:String>Ж</x:String>
+                    </Picker.Items>
+                </Picker>
+            <Label Text = "Группа" FontSize = "Large" />
+                <Picker x:Name="GroupPick">
+                </Picker>
+
+
+
+            <Button Text="Registr" Clicked="RegistrationButtonClicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
